@@ -44,6 +44,22 @@
 
 package org.setiquest.samples.JSON;
 
+import static org.junit.Assert.assertEquals;
+
+import java.io.StringWriter;
+import java.io.Writer;
+
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
 
 
 /**
@@ -53,5 +69,62 @@ package org.setiquest.samples.JSON;
  */
 public class JSONExample 
 {
+	/**
+	 * Default constructor.
+	 */
+	public JSONExample()
+	{
+		
+	}
+	
+	/**
+	 * Somple main() to test JSON and Jackson
+	 * @param args
+	 * @throws Exception
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 */
 
+	public static void main(String[] args) throws Exception, JsonMappingException, IOException
+	{
+		Person person1 = new Person("Joe", "Smith", 23);
+		
+		//Convert m_person into JSON String.
+		Writer strWriter = new StringWriter();	
+		ObjectMapper mapper = new ObjectMapper();
+	    mapper.writeValue(strWriter, person1);
+	    String s = strWriter.toString();
+	    
+	    //Print out the String representation in JSON format of the m_mapper object.
+	    //Normally we would not print out like this in a JUnit test, but this
+	    //is also to be used as an example.
+	    s.hashCode();
+	    System.out.println("m_person as JSON string: " + s);
+	    System.out.println("m_person hash code: " + s.hashCode());
+	    
+	    //Assert test error if has code of string is not correct.
+	    if(s.hashCode() != -182820439)
+	    {
+	    	System.err.println("Hash Code incorrect!");
+	    	System.exit(1);
+	    }
+	    
+	    //Change the age to 14 years in the JSON string.
+	    s = s.replace("23", "14");
+	    
+	    //Convert the JSON string to a Person object instance
+	    Person person = mapper.readValue(s, Person.class);
+	    
+	    //Assert test error if the person object age is NOT 14
+	    if(person.getAgeYears() != 14)
+	    {
+	    	System.err.println("Age not 14!");
+	    	System.exit(1);
+	    }
+	    
+	    System.out.println("Passed, all OK!");
+	   
+	}
 }
+
+
