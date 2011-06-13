@@ -45,8 +45,24 @@ package org.setiquest.samples.JSON;
 
 import static org.junit.Assert.*;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Reader;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
+
 import org.junit.Before;
 import org.junit.Test;
+
+import org.codehaus.jackson.JsonFactory;
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.JsonGenerator;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.TypeReference;
+
 
 /**
  * Class to test the Person class.
@@ -106,6 +122,36 @@ public class PersonTest
 		assertEquals("age error.", 14, (int)m_person.getAgeYears());
 		m_person.setAgeYears(23);
 		assertEquals("age error.", 23, (int)m_person.getAgeYears());
+	}
+	
+	@Test
+	public void testJSON() throws JsonGenerationException, JsonMappingException, IOException, Exception
+	{
+		//Convert m_person into JSON String.
+		Writer strWriter = new StringWriter();	
+		ObjectMapper mapper = new ObjectMapper();
+	    mapper.writeValue(strWriter, m_person);
+	    String s = strWriter.toString();
+	    
+	    //Print out the String representation in JSON format of the m_mapper object.
+	    //Normally we would not print out like this in a JUnit test, but this
+	    //is also to be used as an example.
+	    s.hashCode();
+	    System.out.println("m_person as JSON string: " + s);
+	    System.out.println("m_person hash code: " + s.hashCode());
+	    
+	    //Assert test error if has code of string is not correct.
+	    assertEquals("JSON conversion hash error.", -597509411, s.hashCode());
+	    
+	    //Change the age to 14 years in the JSON string.
+	    s = s.replace("23", "14");
+	    
+	    //Convert the JSON string to a Person object instance
+	    Person person = mapper.readValue(s, Person.class);
+	    
+	    //Assert test error if the person object age is NOT 14
+	    assertEquals("JSON string 2 instance error, age: ", 14, (int)person.getAgeYears());
+		
 	}
 
 }

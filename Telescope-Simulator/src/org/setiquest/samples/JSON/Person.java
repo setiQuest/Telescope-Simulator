@@ -57,6 +57,13 @@ public class Person
 	  private Integer _ageYears;
 	 
 	  /**
+	   * Default Constructor.
+	   */
+	  public Person()
+	  {	  
+	  }
+	  
+	  /**
 	   * Constructor.
 	   * @param firstName the first name of the person.
 	   * @param lastName the last name of the person.

@@ -4,6 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="jars/junit-4.9b2.jar"/>
 	<classpathentry kind="src" path="tests"/>
-	<classpathentry kind="lib" path="jars/jackson-core-lgpl-1.8.1.jar"/>
+	<classpathentry kind="lib" path="jars/jackson-all-1.8.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
