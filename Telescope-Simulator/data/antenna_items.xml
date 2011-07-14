@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<!DOCTYPE config SYSTEM "metadata_config.dtd">
+
+<config version="Verion 1.0, abbreviated version for antenna items. July 11, 2011, Jon Richards >
+
+  <comments>
+    <comment>
+      Abbreviate description of all metadata items describing aspects of the ATA System.
+    </comment>
+    <comment>
+      This XML file contains only the items associated with the antennas.
+    </comment>
+    <lastedit>July 11, 2011 - Jon Richards</lastedit>
+  </comments>
+
+  <items group="Antennas">
+
+    <!-- Sensors -->
+    <item id="key01" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>ControlBoxTemp</name>
+      <abbrev>CBT</abbrev>
+      <description>Control Box Temperature</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>  
+    <item id="key02" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>DriveBoxTemp</name>
+      <abbrev>DBT</abbrev>
+      <description>Drive Box Temperature</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key03" type="float" interval="0.0" units="unk" persistence="86400.0">
+      <name>RimBoxTemp</name>
+      <abbrev>RBT</abbrev>
+      <description>Rim Box Temperature</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key04" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>PAXBoxTemp</name>
+      <abbrev>PBT</abbrev>
+      <description>PAX Box Temperature</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key05" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>WrapPot</name>
+      <abbrev>WP</abbrev>
+      <description>Wrap Pot</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key06" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>PAMX</name>
+      <abbrev>PX</abbrev>
+      <description>PAMX</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key07" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>PAMY</name>
+      <abbrev>PY</abbrev>
+      <description>PAMY</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key08" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>PAXDetX</name>
+      <abbrev>DetX</abbrev>
+      <description>PAX Current Power Detector value on X-pol</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key09" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>PAXDetY</name>
+      <abbrev>DetX</abbrev>
+      <description>PAX Current Power Detector value on Y-pol</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key10" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>alidadeInTemp</name>
+      <oldname>ADC01</oldname>
+      <abbrev>AIT</abbrev>
+      <description>Alidade Air In Temperature (ADC01)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key11" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>alidadeOutTemp</name>
+      <abbrev>AOT</abbrev>
+      <oldname>ADC02</oldname>
+      <description>Alidade Air Out Temperature (ADC02)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key12" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>elMotorTemp</name>
+      <abbrev>EMT</abbrev>
+      <oldname>ADC03</oldname>
+      <description>Elevation Motor Temperature (ADC03)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key13" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>elGearLiqLevel</name>
+      <abbrev>EGLL</abbrev>
+      <oldname>ADC04</oldname>
+      <description>Elevation Gears Liquid Level Sensor (ADC04)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key14" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>ADC05</name>
+      <abbrev>ADC05</abbrev>
+      <description>Unused</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key15" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>ADC06</name>
+      <abbrev>ADC06</abbrev>
+      <description>Unused</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key16" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>rimBoxHeatSinkTemp</name>
+      <abbrev>RBHST</abbrev>
+      <oldname>ADC07</oldname>
+      <description>Rim Box Heat Sink Temperature (ADC07)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key17" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>PAXCaseTemp</name>
+      <abbrev>PXCT</abbrev>
+      <oldname>ADC08</oldname>
+      <description>PAX Case Temperature (ADC08)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key18" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>PAXAirTemp</name>
+      <abbrev>PAT</abbrev>
+      <oldname>ADC09</oldname>
+      <description>PAX Air Temperature (ADC09)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key19" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>PAXHeatSinkTemp</name>
+      <abbrev>PXHST</abbrev>
+      <oldname>ADC10</oldname>
+      <description>PAX Heat Sink Temperature (ADC10)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key20" type="string" units="unk" persistence="86400.0" interval="0.0">
+      <name>IonVoltFault</name>
+      <abbrev>IonVF</abbrev>
+      <oldname>ADC11</oldname>
+      <description>Ion Pump Control High Voltage Fault (ADC11)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key21" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>IonCurrent</name>
+      <abbrev>IonI</abbrev>
+      <oldname>ADC12</oldname>
+      <description>Ion Pump Control Current (ADC12)</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key22" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>AzIDraw</name>
+      <abbrev>AzI</abbrev>
+      <description>Azimuth Motor Current Draw</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key23" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>ElIDraw</name>
+      <abbrev>ElI</abbrev>
+      <description>Elevation Motor Current Draw</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key24" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>CryoTemp</name>
+      <abbrev>CryoT</abbrev>
+      <description>Cryo Temperature</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key25" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>CryoPower</name>
+      <abbrev>CryoP</abbrev>
+      <description>Cryo Power</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key26" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>CryoRejTemp</name>
+      <abbrev>CryoRT</abbrev>
+      <description>Cryo Rejection Temperature</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key27" type="string" units="unk" persistence="86400.0" interval="0.0">
+      <name>AzMotorFaults</name>
+      <abbrev>AzF</abbrev>
+      <description>Azimuth Motor Faults</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key28" type="string" units="unk" persistence="86400.0" interval="0.0">
+      <name>ElMotorFaults</name>
+      <abbrev>ElF</abbrev>
+      <description>Elevation Motor Faults</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key29" type="string" units="unk" persistence="86400.0" interval="0.0">
+      <name>FeedFocus</name>
+      <abbrev>Foc</abbrev>
+      <description>Feed Focus</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+
+    <!-- Trajectories -->
+    <item id="key30" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>KalAz</name>
+      <abbrev>KAz</abbrev>
+      <description>Kalman Trajectory Azimuth</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key31" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>KalEl</name>
+      <abbrev>KalEl</abbrev>
+      <description>Kalman Trajectory Elevation</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key32" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>KalAzVel</name>
+      <abbrev>KAzV</abbrev>
+      <description>Kalman Trajectory Azimuth Velocity</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key33" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>KalElVel</name>
+      <abbrev>KElV</abbrev>
+      <description>Kalman Trajectory Elevation Velocity</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key34" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>EncoderAz</name>
+      <abbrev>EAz</abbrev>
+      <description>Encoder Trajectory Azimuth</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key35" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>EncoderEl</name>
+      <abbrev>EEl</abbrev>
+      <description>Encoder Trajectory Elevation</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key36" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>EncoderAzVel</name>
+      <abbrev>EAzV</abbrev>
+      <description>Encoder Trajectory Azimuth Velocity</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key37" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>EncoderElVel</name>
+      <abbrev>EElV</abbrev>
+      <description>Encoder Trajectory Elevation Velocity</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+
+    <!-- LNA -->
+    <item id="key38" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <proxytype>PAXBoxInterface</proxytype>
+      <name>xlnavg</name>
+      <abbrev>xvg</abbrev>
+      <description>X-Pol LNA vg</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key39" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xlnavd</name>
+      <abbrev>xvd</abbrev>
+      <description>X-Pol LNA vd</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key40" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xlnavm</name>
+      <abbrev>xvm</abbrev>
+      <description>X-Pol LNA vm</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key41" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xlnaid</name>
+      <abbrev>xid</abbrev>
+      <description>X-Pol LNA id</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key42" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>ylnavg</name>
+      <abbrev>yvg</abbrev>
+      <description>Y-Pol LNA vg</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key43" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>ylnavd</name>
+      <abbrev>yvd</abbrev>
+      <description>Y-Pol LNA vd</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key44" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>ylnavm</name>
+      <abbrev>yvm</abbrev>
+      <description>Y-Pol LNA vm</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key45" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>ylnaid</name>
+      <abbrev>yid</abbrev>
+      <description>Y-Pol LNA id</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key46" type="string" units="unk" persistence="86400.0" interval="0.0">
+      <name>lnastate</name>
+      <abbrev></abbrev>
+      <description>LNA Turned ON or OFF</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+
+    <item id="key47" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>BackupBattery</name>
+      <abbrev>Btty</abbrev>
+      <description>Alidade Control Computer Backup Battery</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key48" type="string" units="unk" persistence="86400.0" interval="0.0">
+      <name>AzBrake</name>
+      <abbrev>AzB</abbrev>
+      <description>Azimuth Motor Brake</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key49" type="string" units="unk" persistence="86400.0" interval="0.0">
+      <name>ElBrake</name>
+      <abbrev>ElB</abbrev>
+      <description>Elevation Motor Brake</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key50" type="string" units="unk" persistence="86400.0" interval="0.0">
+      <name>OilFloat</name>
+      <abbrev>OilF</abbrev>
+      <description>Oil Float in Alidade</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key51" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>CommandAz</name>
+      <abbrev>CAz</abbrev>
+      <description>Command Trajectory Azimuth</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key52" type="double" units="unk" persistence="86400.0" interval="0.0">
+      <name>CommandEl</name>
+      <abbrev>CEl</abbrev>
+      <description>Command Trajectory Elevation</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+
+    <!-- Health -->
+    <item id="key53" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xRadPnt</name>
+      <abbrev></abbrev>
+      <description>X-Pol Radio Pointing Offset</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key54" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xHIsn</name>
+      <abbrev></abbrev>
+      <description>X-Pol HI s/n ratio</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key55" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xJypkL</name>
+      <abbrev></abbrev>
+      <description>X-Pol Radio Pointing Offset</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key56" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xJypkC</name>
+      <abbrev></abbrev>
+      <description>X-Pol Janskys per degrees Kelvin, C Band</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key57" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xJypkX</name>
+      <abbrev></abbrev>
+      <description>X-Pol Janskys per degrees Kelvin, X Band</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key58" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>xHealthScore</name>
+      <abbrev></abbrev>
+      <description>X-Pol Health Score</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key59" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>yRadPnt</name>
+      <abbrev></abbrev>
+      <description>Y-Pol Radio Pointing Offset</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key60" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>yHIsn</name>
+      <abbrev></abbrev>
+      <description>Y-Pol HI s/n ratio</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key61" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>yJypkL</name>
+      <abbrev></abbrev>
+      <description>Y-Pol Janskys per degrees Kelvin, L Band</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key62" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>yJypkC</name>
+      <abbrev></abbrev>
+      <description>Y-Pol Janskys per degrees Kelvin, C Band</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key63" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>yJypkX</name>
+      <abbrev></abbrev>
+      <description>Y-Pol Janskys per degrees Kelvin, X Band</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key64" type="float" units="unk" persistence="86400.0" interval="0.0">
+      <name>yHealthScore</name>
+      <abbrev></abbrev>
+      <description>Y-Pol Health Score</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key65" type="float" units="K" persistence="86400.0" interval="0.0">
+      <name>xTsys</name>
+      <abbrev></abbrev>
+      <description>System Temperature X-Pol</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key80" type="float" units="K" persistence="86400.0" interval="0.0">
+      <name>yTsys</name>
+      <abbrev></abbrev>
+      <description>System Temperature Y-Pol</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+    <item id="key81" type="float" units="Jy" persistence="86400.0" interval="0.0">
+      <name>SEFD</name>
+      <abbrev></abbrev>
+      <description>System Equivalent Flux Density</description>
+      <proxycall>new LongDouble( 0L, 0.0)</proxycall>
+    </item>
+  </items> <!-- items group=Antennas -->
+
+</config>
+
